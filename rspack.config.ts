@@ -35,7 +35,7 @@ export default defineConfig({
     // You need to set a unique value that is not equal to other applications
     uniqueName: "home_app",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:8080/",
+    publicPath: process.env.PUBLIC_PATH || "http://localhost:8080/",
   },
 
   experiments: {
